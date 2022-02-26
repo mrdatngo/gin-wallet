@@ -17,6 +17,7 @@ Golang using gin framework - Wallet Management
   10. Can delete wallet at (only admin role): ```localhost:3001/api/v1/wallet/:wallet_id```, beware that wallet not actually delete, it just de-activate (we don't delete data on real-case)
   11. Deposit to wallet (admin role): ```localhost:3001/api/v1/deposit```
   12. View deposits (admin role or users themselves): ```localhost:3001/api/v1/deposits```
+  13. Update user email (admin role): ```localhost:3001/api/v1/update-email```
 
 ### Feature
 
