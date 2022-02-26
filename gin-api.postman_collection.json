@@ -1,0 +1,429 @@
+{
+	"info": {
+		"_postman_id": "cfccb25f-ab0e-4f79-9174-29ffafa12433",
+		"name": "gin-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fullname\": \"ujang bahri\",\n    \"email\": \"ujang13@zetmail.com\",\n    \"password\": \"ujang13\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/v1/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"aldikhan13@zetmail.com\",\n    \"password\": \"aldikhan13\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/v1/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "activation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/activation/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InJlc3R1d2FoeXUxM0B6ZXRtYWlsLmNvbSIsImV4cGlyZWRBdCI6MTYxOTIwMzQwOCwiaWQiOjE2fQ.b8i8VkNyI4ufQ2yF_VjaJSBVPVUi8B6YKZ_qLNuwa3k",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"activation",
+								"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InJlc3R1d2FoeXUxM0B6ZXRtYWlsLmNvbSIsImV4cGlyZWRBdCI6MTYxOTIwMzQwOCwiaWQiOjE2fQ.b8i8VkNyI4ufQ2yF_VjaJSBVPVUi8B6YKZ_qLNuwa3k"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/v1/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InJlc3R1d2FoeXUxM0B6ZXRtYWlsLmNvbSIsImV4cGlyZWRBdCI6MTYxOTIwMzQwOCwiaWQiOjE2fQ.b8i8VkNyI4ufQ2yF_VjaJSBVPVUi8B6YKZ_qLNuwa3k",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"reset-password",
+								"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InJlc3R1d2FoeXUxM0B6ZXRtYWlsLmNvbSIsImV4cGlyZWRBdCI6MTYxOTIwMzQwOCwiaWQiOjE2fQ.b8i8VkNyI4ufQ2yF_VjaJSBVPVUi8B6YKZ_qLNuwa3k"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resend",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"restuwahyu13@zetmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/v1/resend-token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"resend-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgot",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"restuwahyu13@zetmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/v1/reset-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-email",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InRlc3Q4QGdtYWlsLmNvbSIsImV4cCI6MTY0NTk2NTAxOCwiaWQiOiJiZjVmMDc2Yy0wYjEzLTQyNDEtYThmZi1lMmIyOTVmYjI2MzgifQ.FHwZ_fTst6EZTry37iqg-DZTWA9sekA8gQosVsqQAX8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin2@gmail.com\",\r\n    \"new_email\": \"admin3@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/api/v1/update-email",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"update-email"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "wallet",
+			"item": [
+				{
+					"name": "delete wallet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InRlc3Q4QGdtYWlsLmNvbSIsImV4cCI6MTY0NTk1NTA2NiwiaWQiOiJiZjVmMDc2Yy0wYjEzLTQyNDEtYThmZi1lMmIyOTVmYjI2MzgifQ.GdHLfko4Wv6F-CVsFsgriQKRsddmox_3HC__HM1mzxg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/api/v1/wallet/7f9acd88-7a9d-4c3c-b760-491065e20679",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"wallet",
+								"7f9acd88-7a9d-4c3c-b760-491065e20679"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "wallets",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6Im5nb3RodWNkYXQ5NkBnbWFpbC5jb20iLCJleHAiOjE2NDU5NTQxMzgsImlkIjoiYzQxZWVlYjAtYzMwNS00ZGZhLTk5NGQtMzVjZTkzOGY5ZWMwIn0.Va8_aQp2JvZElzichHaW7_CUqVAx3etNMNc3yvf69To",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": \"c41eeeb0-c305-4dfa-994d-35ce938f9ec0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/api/v1/wallets",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"wallets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create wallet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InRlc3Q4QGdtYWlsLmNvbSIsImV4cCI6MTY0NTk0NTQwNCwiaWQiOiJiZjVmMDc2Yy0wYjEzLTQyNDEtYThmZi1lMmIyOTVmYjI2MzgifQ.4fRNrfNZxPZA7wjuIiJ4A5saeYNzCQs_Xe9SD-DGunA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": \"c41eeeb0-c305-4dfa-994d-35ce938f9ec0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/api/v1/wallet",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"wallet"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "transactions",
+			"item": [
+				{
+					"name": "deposit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InRlc3Q4QGdtYWlsLmNvbSIsImV4cCI6MTY0NTk1NTA2NiwiaWQiOiJiZjVmMDc2Yy0wYjEzLTQyNDEtYThmZi1lMmIyOTVmYjI2MzgifQ.GdHLfko4Wv6F-CVsFsgriQKRsddmox_3HC__HM1mzxg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"wallet_id\": \"7f9acd88-7a9d-4c3c-b760-491065e20679\",\r\n    \"amount\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/api/v1/deposit",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"deposit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deposits",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InRlc3Q4QGdtYWlsLmNvbSIsImV4cCI6MTY0NTk1NTA2NiwiaWQiOiJiZjVmMDc2Yy0wYjEzLTQyNDEtYThmZi1lMmIyOTVmYjI2MzgifQ.GdHLfko4Wv6F-CVsFsgriQKRsddmox_3HC__HM1mzxg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": \"c41eeeb0-c305-4dfa-994d-35ce938f9ec0\",\r\n    \"wallet_id\": \"7f9acd88-7a9d-4c3c-b760-491065e20679\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/api/v1/deposits",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"deposits"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
